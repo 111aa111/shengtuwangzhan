@@ -1,0 +1,298 @@
+<!-- html:5 + 回车  快速创捷html文档结构 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神途网站</title>
+    <!-- 引入css文件 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <!-- 
+        块元素：能直接设置宽高，会独占一行，常用元素： div ul li h1-h6 p
+        行内块元素: 能直接设置宽高, 不会独占一行 常用元素：img video input
+        行内元素: 不能直接设置宽高，也不会独占一行 常用元素： a  span 
+
+        display:block; 将转为块元素
+        display: inline-block; 将元素转为行内块元素
+        display: inline;  将元素转为行内元素
+     -->
+    <!-- 顶部导航 -->
+    <!-- 快捷键 div.类名 + 回车 -->
+    <div class="topNavBox">
+        <div class="topNav">
+            <!-- 快捷键： ul>li*7>a + 回车 -->
+            <ul>
+                <li><a href="#">首页<span>HOME</span></a></li>
+                <li><a href="#">新闻中心<span>NEWS</span></a></li>
+                <li><a href="#">账号注册<span>REGISTER</span></a></li>
+                <li class="bannerlogo"><img src="./images/bannerlogo.png" alt=""></li>
+                <li><a href="#">充值中心<span>RECHARGE</span></a></li>
+                <li><a href="#">下载游戏<span>DOWNLOAD</span></a></li>
+                <li><a href="#">自定义<span>ZIDINGYI</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- bannerimg -->
+    <div class="bannerBox">
+        <!-- 视频背景 -->
+        <div class="bannerVideo">
+            <!-- autoplay: 自动播放  loop：循环播放 muted：视频静音 -->
+            <video src="./video/shentu.mp4" autoplay loop muted></video>
+        </div>
+
+        <!-- 图片 -->
+        <div class="bannerImg">
+            <div class="logo">
+                <img src="./images/bannerlogo.png" alt="">
+            </div>
+            <div class="txt1">
+                <img src="./images/bannertxt1.png" alt="">
+            </div>
+            <div class="txt2">
+                <img src="./images/bannertxt2.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="mainContent">
+
+        <!-- 公告 -->
+        <div class="gonggao">
+
+            <div class="g_title">最新公告</div>
+
+            <ul class="g_list">              
+             
+                <li style="margin-top: 0px;"><a href="#">市场监管总局：“双十一”禁止“先提价后打折”</a></li>
+                <li style="margin-top: 0px;"><a href="#">国家卫健委：北京等地社区传播已经得到基本控制</a></li>
+                <li style="margin-top: 0px;"><a href="#">重医大科研团队发现3个新冠病毒超强抗体</a></li>
+            </ul>
+
+            <div class="g_more"><a href="#">查看更多</a></div>
+
+        </div>
+
+        <!-- 图文列表 -->
+        <div class="mainBox">
+            <ul class="imgList">
+                <li>
+                    <div class="imgBox">
+                        <img src="./images/img386x200-1.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h4>编辑名称单职业神途</h4>
+                        <div class="time">开区时间：（10:00 16:00 20:00）</div>
+                        <div class="btnBox">
+                            <a href="#">进入官网</a>
+                            <a href="#">微端下载</a>
+                            <a href="#">手游下载</a>
+                        </div>
+                    </div>
+                    <!-- 隐藏的盒子 -->
+                    <div class="hideBox">
+                        <p>扫描二维码 下载神途手游</p>
+                        <div class="code">
+                            <img src="./images/fixed-code.png" alt="">
+                        </div>
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="imgBox">
+                        <img src="./images/img386x200-2.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h4>编辑名称单职业神途</h4>
+                        <div class="time">开区时间：（10:00 16:00 20:00）</div>
+                        <div class="btnBox">
+                            <a href="#">进入官网</a>
+                            <a href="#">微端下载</a>
+                            <a href="#">手游下载</a>
+                        </div>
+                    </div>
+                    <!-- 隐藏的盒子 -->
+                    <div class="hideBox">
+                        <p>扫描二维码 下载神途手游</p>
+                        <div class="code">
+                            <img src="./images/fixed-code.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <img src="./images/img386x200-3.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h4>编辑名称单职业神途</h4>
+                        <div class="time">开区时间：（10:00 16:00 20:00）</div>
+                        <div class="btnBox">
+                            <a href="#">进入官网</a>
+                            <a href="#">微端下载</a>
+                            <a href="#">手游下载</a>
+                        </div>
+                    </div>
+                    <!-- 隐藏的盒子 -->
+                    <div class="hideBox">
+                        <p>扫描二维码 下载神途手游</p>
+                        <div class="code">
+                            <img src="./images/fixed-code.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <img src="./images/img386x200-1.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h4>编辑名称单职业神途</h4>
+                        <div class="time">开区时间：（10:00 16:00 20:00）</div>
+                        <div class="btnBox">
+                            <a href="#">进入官网</a>
+                            <a href="#">微端下载</a>
+                            <a href="#">手游下载</a>
+                        </div>
+                    </div>
+                    <!-- 隐藏的盒子 -->
+                    <div class="hideBox">
+                        <p>扫描二维码 下载神途手游</p>
+                        <div class="code">
+                            <img src="./images/fixed-code.png" alt="">
+                        </div>
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="imgBox">
+                        <img src="./images/img386x200-2.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h4>编辑名称单职业神途</h4>
+                        <div class="time">开区时间：（10:00 16:00 20:00）</div>
+                        <div class="btnBox">
+                            <a href="#">进入官网</a>
+                            <a href="#">微端下载</a>
+                            <a href="#">手游下载</a>
+                        </div>
+                    </div>
+                    <!-- 隐藏的盒子 -->
+                    <div class="hideBox">
+                        <p>扫描二维码 下载神途手游</p>
+                        <div class="code">
+                            <img src="./images/fixed-code.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <img src="./images/img386x200-3.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h4>编辑名称单职业神途</h4>
+                        <div class="time">开区时间：（10:00 16:00 20:00）</div>
+                        <div class="btnBox">
+                            <a href="#">进入官网</a>
+                            <a href="#">微端下载</a>
+                            <a href="#">手游下载</a>
+                        </div>
+                    </div>
+                    <!-- 隐藏的盒子 -->
+                    <div class="hideBox">
+                        <p>扫描二维码 下载神途手游</p>
+                        <div class="code">
+                            <img src="./images/fixed-code.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <img src="./images/img386x200-1.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h4>编辑名称单职业神途</h4>
+                        <div class="time">开区时间：（10:00 16:00 20:00）</div>
+                        <div class="btnBox">
+                            <a href="#">进入官网</a>
+                            <a href="#">微端下载</a>
+                            <a href="#">手游下载</a>
+                        </div>
+                    </div>
+                    <!-- 隐藏的盒子 -->
+                    <div class="hideBox">
+                        <p>扫描二维码 下载神途手游</p>
+                        <div class="code">
+                            <img src="./images/fixed-code.png" alt="">
+                        </div>
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="imgBox">
+                        <img src="./images/img386x200-2.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h4>编辑名称单职业神途</h4>
+                        <div class="time">开区时间：（10:00 16:00 20:00）</div>
+                        <div class="btnBox">
+                            <a href="#">进入官网</a>
+                            <a href="#">微端下载</a>
+                            <a href="#">手游下载</a>
+                        </div>
+                    </div>
+                    <!-- 隐藏的盒子 -->
+                    <div class="hideBox">
+                        <p>扫描二维码 下载神途手游</p>
+                        <div class="code">
+                            <img src="./images/fixed-code.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgBox">
+                        <img src="./images/img386x200-3.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h4>编辑名称单职业神途</h4>
+                        <div class="time">开区时间：（10:00 16:00 20:00）</div>
+                        <div class="btnBox">
+                            <a href="#">进入官网</a>
+                            <a href="#">微端下载</a>
+                            <a href="#">手游下载</a>
+                        </div>
+                    </div>
+                    <!-- 隐藏的盒子 -->
+                    <div class="hideBox">
+                        <p>扫描二维码 下载神途手游</p>
+                        <div class="code">
+                            <img src="./images/fixed-code.png" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- 引入jQuery文件 -->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <!-- 引入自己的js文件 -->
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>

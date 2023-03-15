@@ -1,0 +1,354 @@
+/* 去除元素的默认样式 */
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none; /* 去除列表标签的浮点*/
+}
+a{
+    text-decoration: none; /*去除a标签的下划线*/
+}
+
+/* body的背景样式 */
+body{
+    background-image: url(../images/bg-body.jpg);
+    background-repeat: repeat-y;  /*背景图片垂直方向重复平铺*/
+    background-position: center 0;
+}
+
+/* 顶部导航样式 */
+.topNavBox{
+    height: 100px;
+    width: 100%;
+    min-width: 1200px;  /*最小宽度*/
+    background-image: url(../images/topnavbg.png);
+    position: fixed;  /*固定定位*/
+    top: 0;
+    z-index: 999;  /* 层级， 值越大层级越高*/
+}
+.topNavBox .topNav{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.topNavBox .topNav ul li{
+    width: 150px;
+    text-align: center;
+    float: left;
+    padding-top: 25px;
+    line-height: 26px;
+}
+.topNavBox .topNav ul li a{
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+.topNavBox .topNav ul li span{
+    font-size: 12px;
+    font-weight: normal;
+    color: #2d7f81;
+    display: block;
+    transition: transform .5s;
+}
+.topNavBox .topNav ul .bannerlogo{
+    width: 260px;
+    height: 80px;
+    padding: 0 20px;
+}
+.topNavBox .topNav ul .bannerlogo img{
+    height: 110px;
+    width: auto;   /* 宽度根据高度等比缩放，为了不让图片变形*/
+    margin-top: 22px;
+}
+/* :hover  鼠标悬停在某个元素上 */
+.topNavBox .topNav ul li a:hover{
+    color: #c6e0df;
+}
+.topNavBox .topNav ul li a:hover span{
+    transform: rotateY(360deg);   /* 旋转样式， 根据Y轴旋转360度*/
+}
+
+/* bannerimg 样式 */
+.bannerBox{
+    width: 100%;
+    min-width: 1200px;
+    height: 980px;
+    position: relative;
+}
+.bannerBox .bannerVideo video{
+    width: 100%;
+    height: auto;
+    min-width: 1200px;
+}
+.bannerBox .bannerImg{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1200px;
+    height: 980px;
+    margin-left: -600px;
+    
+}
+.bannerBox .bannerImg .logo{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 18%;
+    text-align: center;
+}
+.bannerBox .bannerImg .logo img{
+    width: auto;
+    height: 195px;
+}
+.bannerBox .bannerImg .txt1{
+    width: 560px;
+    height: auto;
+    position: absolute;
+    top: 47%;
+    right: 0;
+}
+.bannerBox .bannerImg .txt2{
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 22%;
+    left: 8%;
+}
+.bannerBox .bannerImg .txt1 img,
+.bannerBox .bannerImg .txt2 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* banner自适应 */
+/* 当浏览器宽度在大于1601并且小于1880px时，相关标签样式则使用以下设置 */
+@media screen and (min-width:1601px) and (max-width:1880px){
+    .bannerBox,
+    .bannerBox .bannerImg{
+        height: 920px;
+    }
+    .bannerBox .bannerImg .logo{
+        width: 520px;
+        top: 17%;
+    }
+    .bannerBox .bannerImg .logo img{
+        height: 190px;
+    }
+    .bannerBox .bannerImg .txt1{
+        width: 45%;
+        top: 43%;
+        right: 3%;
+    }
+    .bannerBox .bannerImg .txt2{
+        top: 27%;
+        left: 10%;
+    }
+}
+@media screen and (min-width:1367px) and (max-width:1600px){
+    .bannerBox,
+    .bannerBox  .bannerImg{
+        height: 840px;
+    }
+    .bannerBox .bannerImg .logo{
+        width: 460px;
+        top: 17%;
+        right: 5%;
+    }
+    .bannerBox .bannerImg .logo img{
+        height: 170px;
+    }
+    .bannerBox .bannerImg .txt1{
+        width: 43%;
+        top: 39%;
+        right: 2%;
+    }
+    .bannerBox .bannerImg .txt2{
+        width: 20%;
+        top: 20%;
+        left: 10%;
+    }
+}
+@media screen and (max-width:1366px){
+    .bannerBox,
+    .bannerBox  .bannerImg{
+        height: 750px;
+    }
+    .bannerBox .bannerImg .logo{
+        width: 400px;
+        top: 18%;
+        right: 12%;
+    }
+    .bannerBox .bannerImg .logo img{
+        height: 150px;
+    }
+    .bannerBox .bannerImg .txt1{
+        width: 40%;
+        top: 35%;
+        right: 8%;
+    }
+    .bannerBox .bannerImg .txt2{
+        width: 20%;
+        top: 27%;
+        left: 10%;
+    }
+}
+
+/* 主体内容 */
+.mainContent{
+    margin-top: -200px;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    min-width: 1200px;
+}
+.gonggao{
+    width: 1148px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(255,255,255,.5);
+    margin: 0 auto;
+    border: 1px solid #a7dcd6;
+    padding: 0 25px;
+    font-size: 14px;
+}
+.gonggao .g_title{
+    float: left;
+    width: 80px;
+    color: #1b3043;
+    background-image: url(../images/icon-news.png);
+    background-repeat: no-repeat; /*背景图片不平铺*/
+    background-position: 0 9px;
+    padding-left: 32px;
+}
+.gonggao .g_list{
+    float: left;
+    width: 880px;
+    height: 40px;
+    overflow: hidden;  /*超出内容进行隐藏*/
+    
+}
+.gonggao .g_list a{
+    color: #1b3043;
+}
+.gonggao .g_more{
+    float: right;
+}
+.gonggao .g_more a{
+    color: #2d7f81;
+}
+.gonggao .g_more a:hover{
+    text-decoration: underline;
+}
+
+/* 图文列表样式 */
+.mainBox{
+    width: 1200px;
+    min-width: 1200px;
+    margin: 20px auto 0;
+}
+.imgList{
+    width: 100%;
+}
+.imgList li{
+    /* calc() 计算函数 */
+    width: calc((100% - 40px) / 3);
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 1px #dae3ef;  /*盒子阴影属性*/
+    
+}
+/* 选择位于3的倍数的li元素，去除他的 margin-right */
+/* n: 倍数 */
+.imgList li:nth-child(3n){
+    margin-right: 0;
+}
+.imgList li .imgBox img{
+    width: 100%;
+    height: 100%;
+    /*因为img标签是行内块元素，行内块元素本身自带4px的间距,此间距既不是margin，也不是padding*/
+    display: block;  /*将元素转换为块元素*/
+}
+.imgList .textBox{
+    background-color: #fff;
+    border: 1px solid #a7dcd6;
+    text-align: center;
+    padding-bottom: 20px;
+    border-top: none;  /*去除上边框*/
+}
+.imgList .textBox h4{
+    padding: 20px 0 8px;
+    font-size: 26px;
+    margin: 0;
+}
+.imgList .textBox .time{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+.imgList .textBox a{
+    width: 100px;
+    height: 36px;
+    display: inline-block;
+    line-height: 36px;
+    background-color: #2d7f81;
+    color: #fff;
+    border: 1px solid #2d7f81;
+    margin: 0 5px;
+}
+.imgList .textBox a:hover{
+    background-color: #ecfafa;
+    color: #2d7f81;
+    border-color: #a7dcd6;
+}
+/* 隐藏盒子的样式 */
+.imgList .hideBox{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(29,123,125,.9);
+    text-align: center;
+    position: absolute;
+    left: -387px;
+    top: 0;
+    transition: left 0.3s;
+}
+.imgList .hideBox p{
+    position: absolute;
+    top: 0;
+    left: -387px;
+    width: 100%;
+    font-size: 22px;
+    color: #fff;
+    margin: 15px 0;
+    /* transition: 样式过渡属性 第一个值代表需要过渡的样式， 第二个值代表过渡完成的时间第三个值代表过渡效果的开始时间，不设置则默认为0，设置则说明过渡效果要几秒后才开始过渡 */
+    transition: left 0.3s 0.2s;
+}
+.imgList .hideBox .code{
+    width: 130px;
+    height: 130px;
+    padding: 0;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -75px;
+    margin-left: -75px;
+    transition: bottom 0.2s 0.5s;
+}
+.imgList .hideBox .code img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.imgList li:hover .hideBox{
+    left: 0px;
+}
+.imgList li:hover .hideBox p{
+    left: 0;
+}
+.imgList li:hover .hideBox .code{
+    bottom: 0;
+}
